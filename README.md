@@ -1,1 +1,28 @@
 # File_Uplodaespringboot
+
+## Databse Migration
+## Database Name :file_db
+user name :root
+password
+
+
+application.porperty
+spring.application.name=FileupladDB2
+spring.datasource.url=jdbc:mysql://localhost:3306/file_db
+spring.datasource.username=root
+spring.datasource.password=
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+
+spring.flyway.enabled=true
+spring.flyway.locations=classpath:db/migration
+
+
+spring.thymeleaf.prefix=classpath:/templates/
+spring.thymeleaf.suffix=.html
+spring.thymeleaf.mode=HTML
+spring.thymeleaf.encoding=UTF-8
+#spring.thymeleaf.cache=true
+
+
+
