@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>view all image</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+<!--    <link rel="stylesheet" href="src/main/resources/static/style.css">-->
+
+
+    <style>
+        img{
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+ }
+    </style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div>
+<h1>view image</h1>
+
+<p th:text="${image.id}"></p>
+
+
+<img th:src="@{/images/{id}/data(id=${image.id})}">
+<br><br>
+<a th:href="@{/All_record}">back</a>
+
+</div>
+</body>
+</html>
